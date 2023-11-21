@@ -1,0 +1,19 @@
+.create {
+  display: flex;
+  flex: 1 0 0;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #192a3e;
+}

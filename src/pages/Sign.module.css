@@ -1,0 +1,45 @@
+.sign {
+  flex: 1 0 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: clamp(300px, 36vw, 500px);
+  padding: 24px 32px;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+}
+
+.forgot {
+  text-decoration-line: underline;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.btn:first-child {
+  border: 1px solid var(--darkblue);
+}
+
+.btn:last-child {
+  color: var(--white);
+  background-color: var(--darkblue);
+}
