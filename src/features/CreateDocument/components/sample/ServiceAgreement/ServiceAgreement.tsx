@@ -15,13 +15,16 @@ import TextList from "../../TextList/TextList";
 // Create fonts
 Font.register({
   family: "Roman",
-  src: "../../../../../../public/assets/fonts/TimesNewRoman/Times New Roman Regular.ttf",
-  fontWeight: 400,
-});
-Font.register({
-  family: "Roman",
-  src: "../../../../../../public/assets/fonts/TimesNewRoman/Times New Roman Bold.ttf",
-  fontWeight: 700,
+  fonts: [
+    {
+      src: "assets/fonts/Times New Roman Regular.ttf",
+      fontWeight: 400,
+    },
+    {
+      src: "assets/fonts/Times New Roman Bold.ttf",
+      fontWeight: 700,
+    },
+  ],
 });
 
 // Create styles
