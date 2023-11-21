@@ -1,4 +1,4 @@
-import { PDFViewer } from "@react-pdf/renderer";
+import { PDFViewer, PDFDownloadLink } from "@react-pdf/renderer";
 import { useNavigate } from "react-router-dom";
 
 import Input from "components/Input/Input";
@@ -68,7 +68,15 @@ const Form = () => {
           >
             Cancel
           </Button>
-          <Button className={styles.btn}>Generate Document</Button>
+          <Button className={styles.btn} onClick={(e) => e.stopPropagation()}>
+            <PDFDownloadLink
+              document={<ServiceAgreement data={data} />}
+              fileName="example.pdf"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Generate Document
+            </PDFDownloadLink>
+          </Button>
         </div>
       </form>
       <PDFViewer className={styles.containerPDf} showToolbar={false}>

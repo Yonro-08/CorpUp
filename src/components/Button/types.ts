@@ -1,7 +1,7 @@
-import { KeyboardEventHandler, MouseEventHandler } from "react";
+import { KeyboardEventHandler, MouseEventHandler, ReactNode } from "react";
 
 export type ButtonProps = {
-  children: string;
+  children: ReactNode;
   onClick?: MouseEventHandler;
   onKeyPress?: KeyboardEventHandler;
   className?: string;
