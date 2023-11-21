@@ -1,4 +1,4 @@
-import { PDFViewer, PDFDownloadLink } from "@react-pdf/renderer";
+import { PDFViewer } from "@react-pdf/renderer";
 import { useNavigate } from "react-router-dom";
 
 import Input from "components/Input/Input";
